@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      ¿Qué signo chino eres?
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label color="dark">Seleccione y conozca su signo chino</ion-label><br>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="dark">Nacionalidad</ion-label><br>
+        <ion-select [(ngModel)]="datos.nacionalidad">
+          <ion-option selected>Mexico</ion-option>
+          <ion-option>Gringo</ion-option>
+        </ion-select>
+    </ion-item>
+
+  </ion-list>
+
+  <button ion-button block (click)="nacionalidadSeleccionada()">Aceptar</button>
+</ion-content>

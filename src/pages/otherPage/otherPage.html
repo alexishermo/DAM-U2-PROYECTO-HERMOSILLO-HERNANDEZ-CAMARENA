@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Side Menu Page
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-menu [content]="content">
+
+  <ion-toolbar>
+    <ion-title>Pages</ion-title>
+  </ion-toolbar>
+
+  <ion-content>
+    <ion-list><br><br><br><br><br>
+      <button ion-item (click)="irPaginaUno()">
+        Saber su signo chino
+      </button>
+
+      <button ion-item (click)="irPaginaDos()">
+        Saber qué criatura mítica eres
+      </button>
+
+      <button ion-item (click)="irPaginaTres()">
+        Prueba qué tanto conoces NAY. y MX.
+      </button>
+    </ion-list>
+    <button ion-button block (click)="goBack()">Salir de la sesión</button>
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav #content swipeBackEnabled="true"></ion-nav>
+

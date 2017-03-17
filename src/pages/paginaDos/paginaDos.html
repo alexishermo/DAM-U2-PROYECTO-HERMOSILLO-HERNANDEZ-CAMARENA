@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      ¿Qué criatura mítica eres?
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+      <ion-card-header>
+        Selecciona tu rango de mes de nacimiento
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+            <button ion-item (click)="mesEnero()">
+                Enero a Abril
+            </button>
+            <button ion-item (click)="mesMayo()">
+                Mayo a Agosto
+            </button>
+            <button ion-item (click)="mesSeptiembre()">
+                Septiembre a Diciembre
+            </button>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+</ion-content>

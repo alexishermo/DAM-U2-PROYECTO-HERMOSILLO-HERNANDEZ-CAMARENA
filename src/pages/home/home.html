@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ejercicio05
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list no-lines>
+    <ion-card>
+      <ion-card-header align="center">
+        <h1 color="dark">Login</h1>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+            <ion-item>
+              <ion-img src="login.png" [width]="150" [height]="150" style="align-items:center"></ion-img>
+            </ion-item>
+          
+            <ion-item>
+            <ion-label floating>Username</ion-label>
+            <ion-input type="text" [(ngModel)]="validacion.username"></ion-input>
+          </ion-item>
+          
+          <ion-item>
+            <ion-label floating>Password</ion-label>
+            <ion-input type="password" [(ngModel)]="validacion.password"></ion-input>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card><br><br>
+
+    <button ion-button block (click)="validarLogin()">Login</button>
+</ion-list>
+</ion-content>
